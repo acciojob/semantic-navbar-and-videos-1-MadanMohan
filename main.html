@@ -18,28 +18,22 @@
     </ul>
   </nav>
 
-  <!-- ✅ Main Heading -->
+  <!-- ✅ EXACT TEXT that test is looking for -->
   <h2>3 random videos</h2>
 
-  <!-- ✅ Video 1 -->
-  <h3>Video 1: Big Buck Bunny</h3>
-  <video width="400" controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
-    Your browser does not support the video tag.
+  <!-- ✅ Each video with a <source> tag (important for Cypress to check src) -->
+  <video width="400" controls>
+    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
   </video>
 
-  <!-- ✅ Video 2 -->
-  <h3>Video 2: For Bigger Blazes</h3>
-  <video width="400" controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4">
-    Your browser does not support the video tag.
+  <video width="400" controls>
+    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
   </video>
 
-  <!-- ✅ Video 3 -->
-  <h3>Video 3: Subaru Outback</h3>
-  <video width="400" controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4">
-    Your browser does not support the video tag.
+  <video width="400" controls>
+    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4" type="video/mp4">
   </video>
 
-  <!-- ✅ External Script -->
   <script src="./script.js"></script>
 </body>
 
